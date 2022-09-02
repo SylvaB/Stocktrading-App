@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "gradle tests",
+      "setup": "",
+      "run": "gradle test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "gradle output",
+      "setup": "",
+      "run": "! (gradle test -i | grep -A 1 -B 5 \"expected\")",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
